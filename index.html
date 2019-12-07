@@ -1,9 +1,141 @@
 <!DOCTYPE html>
-
 <html>
-
+<head>
+    <title>James McGowan Tower Defence Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="css/mystyle.css" rel="stylesheet" type="text/css"/>
+</head>
 <body>
-<h1> Hello World</h1>
-<p> i'm hosted with github pages.</p>
+<!--navigation-->
+	<div class="navbar navbar-inverse navbar-static-top">
+		<div class="container">
+			<a href="index.html" class="navbar-brand">PizzaBox</a>
+			<!--collapsale menu trigger-->
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right">
+          	<li><a href="#contact" data-toggle="modal">Contact</a></li>
+          <li><a href="https://twitter.com/pizzaboxz_"> <img src="assets/Twitter.png" alt="TwitterLogo"> </a> </li>
+          <li> <a href="https://www.instagram.com/pizzaboxz/" > <img src="assets/Instagram.png" alt="InstagramLogo"> </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<!--jumbotron-->
+	<div class="container">
+		<div class="jumbotron">
+      <div class="thumbnail">
+        <img src="assets/Logo.png" alt="Logo">
+			<h1> Hello Gamers! </h1>
+			<p>Ever wanted to battle the universe? <br> Now's your chance with Aliens Vs The World. <br> PRE ORDER NOW! </p>
+			<a href="http://www.twitter.com/shaunreeves" target="_blank" class="btn btn-info">Follow Me On Twitter</a>
+		</div>
+  </div>
+	</div>
+
+<!--grid system-->
+	<div class="container">
+		<div class="row">
+		<!--Article 1-->
+			<div class="col-md-4">
+				<div class="thumbnail">
+				  	<img src="assets/pic1.jpg" alt="Article One">
+				  	<div class="caption">
+						<h3>Article 1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius et tellus nec lacinia. Aenean viverra lobortis convallis.</p>
+						<p>
+							<a href="#" class="btn btn-primary" role="button">Button</a>
+						</p>
+				  	</div>
+				</div>
+			</div>
+		<!--Article 2-->
+			<div class="col-md-4">
+				<div class="thumbnail">
+				  	<img src="assets/pic2.jpeg" alt="Article One">
+				  	<div class="caption">
+						<h3>Article 2</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius et tellus nec lacinia. Aenean viverra lobortis convallis.</p>
+						<p>
+							<a href="#" class="btn btn-primary" role="button">Button</a>
+						</p>
+				  	</div>
+				</div>
+			</div>
+		<!--Article 3-->
+			<div class="col-md-4">
+				<div class="thumbnail">
+				  	<img src="assets/pic3.jpeg" alt="Article One">
+				  	<div class="caption">
+						<h3>Article 3</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius et tellus nec lacinia. Aenean viverra lobortis convallis.</p>
+						<p>
+							<a href="#" class="btn btn-primary" role="button">Button</a>
+						</p>
+				  	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--footer-->
+	<div class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container">
+			<p class="navbar-text">Site Built by Shaun Reeves</p>
+			<a class="navbar-btn btn btn-success pull-right">Contact Us</a>
+		</div>
+	</div>
+
+<!--modal-->
+	<div class="modal fade" id="contact" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			<!--Modal Form Start-->
+			<form class="form-horizontal">
+				<div class="modal-header"><!--HEADER-->
+					<h3>Contact Us</h3>
+				</div>
+
+				<div class="modal-body"><!--BODY-->
+					<div class="form-group"><!--name-->
+						<label for="contact-name" class="col-lg-2 control-label">Name</label>
+						<div class="col-lg-10">
+							<input type="text" class="form-control" id="contact-name" placeholder="Full Name">
+						</div>
+					</div>
+					<div class="form-group"><!--email-->
+						<label for="contact-email" class="col-lg-2 control-label">Email</label>
+						<div class="col-lg-10">
+							<input type="email" class="form-control" id="contact-email" placeholder="you@example.com">
+						</div>
+					</div>
+					<div class="form-group"><!--message-->
+						<label for="contact-msg" class="col-lg-2 control-label">Message</label>
+						<div class="col-lg-10">
+							<textarea class="form-control" rows="8"></textarea>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer"><!--FOOTER-->
+					<a class="btn btn-success" type="submit">Submit</a>
+					<a class="btn btn-default" data-dismiss="modal">
+						Close
+					</a>
+				</div>
+			</form>
+			<!--Modal Form End-->
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
